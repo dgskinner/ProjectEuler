@@ -1,3 +1,3 @@
 # ProjectEuler
 
-This repository contains my answers to some problems from Project Euler (https://projecteuler.net/archives). 
+This repository contains my solutions to some problems from Project Euler (https://projecteuler.net/archives). 
