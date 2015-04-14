@@ -1,19 +1,20 @@
 def pandigital_multiples
   x = 9
-  pandigital_num_strings = []
+  largest_pan_num = -1
   while x < 9876 # since n > 1, x must be at most 4 digits
     num_str = ""
     (1..5).each do |n|
       num_str += (x * n).to_s
       break unless pandigital_potential?(num_str)
       if one_to_nine_pandigital?(num_str)
-        pandigital_num_strings << num_str 
+        pan_num = num_str.to_i
+        largest_pan_num = pan_num if pan_num > largest_pan_num
       end
     end
     x += 1
   end
   
-  pandigital_num_strings.map{ |num_str| num_str.to_i }.max
+  largest_pan_num
 end
 
 def one_to_nine_pandigital?(num_str)
