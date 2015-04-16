@@ -26,6 +26,4 @@ def sum_truncatable_primes
   truncatable_primes.inject(&:+)
 end
 
-puts Time.now
-puts sum_truncatable_primes
-puts Time.now
+puts sum_truncatable_primes # => 748317
