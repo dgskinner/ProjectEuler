@@ -30,5 +30,3 @@ def digit_factorials
 end
 
 puts digit_factorials # => 40730
-
-
