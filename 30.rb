@@ -1,11 +1,10 @@
+# Using a similar argument as in problem 34, I used 6 * 9**5 as an upper bound for numbers that need to be checked
+
 def digit_fifth_powers
   total = 0
   num = 10
-  while true
-    if num == sum_fifth_powers(num)
-      total += num 
-      puts total
-    end
+  while num < 354294
+    total += num if num == sum_fifth_powers(num)
     num += 1
   end
   
@@ -21,4 +20,4 @@ def sum_fifth_powers(num)
   sum
 end
 
-digit_fifth_powers
+puts digit_fifth_powers
